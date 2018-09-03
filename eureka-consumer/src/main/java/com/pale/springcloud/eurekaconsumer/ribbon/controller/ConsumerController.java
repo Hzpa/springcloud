@@ -1,4 +1,4 @@
-package com.pale.springcloud.eurekaconsumer.controller;
+package com.pale.springcloud.eurekaconsumer.ribbon.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
