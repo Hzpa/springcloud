@@ -16,7 +16,6 @@
         <module>consul</module>
         <module>eureka-consumer</module>
         <module>eureka-consumer-ribbon</module>
-        <module>eureka-consumer-feign</module>
     </modules>
 
 
