@@ -1,7 +1,22 @@
+server:
+  port: 8899
+  servlet:
+    path: /
+
 spring:
   cloud:
     config:
-      uri: http://127.0.0.1:8888/
       profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
   application:
-    name: application
+    name: pale
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone:  http://127.0.0.1:9999/eureka/
